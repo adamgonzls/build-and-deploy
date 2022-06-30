@@ -1,12 +1,12 @@
 ---
-import Base from './Base.astro'
+import Base from './Base/Base.astro'
 console.log(Astro.props)
 const {title} = Astro.props.content
 ---
 
 <Base title={title}>
-    <div class="wrap">
-        <h1>{title}</h1>
-        <slot></slot>
-    </div>
+  <div class="wrap">
+    <h1>{title}</h1>
+    <slot></slot>
+  </div>
 </Base>

@@ -1,0 +1,18 @@
+@import './reset.css';
+
+img {
+  max-width: 100%;
+}
+  
+p {
+  max-width: 72em;
+  color: red;
+}
+
+ul, li {
+  list-style-position: inside;
+}
+
+.page-container {
+  padding: 2em;
+}

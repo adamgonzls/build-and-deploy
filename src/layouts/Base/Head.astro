@@ -1,0 +1,14 @@
+---
+const {title, description} = Astro.props
+console.log(Astro.canonicalURL)
+const canonicalURL = Astro.canonicalURL.href
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title ? title : 'Astro Build and Deploy'}</title>
+  <meta name="description" content={description ? description : 'Astro Build and Deploy'}>
+  <link rel="canonical" href={canonicalURL}>
+</head>

@@ -1,8 +1,27 @@
 ---
-import Base from '../layouts/Base.astro'
+import Base from '../layouts/Base/Base.astro'
+import {Markdown} from 'astro/components'
+import Card from '../components/Card.astro'
 ---
 
+<style>
+  p {
+    color: green;
+  }
+</style>
+
 <Base title="Home Page">
-	<h1>This is my Home Page</h1>
-	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse similique illum! Sapiente cumque voluptates aliquid voluptatum aspernatur aperiam error harum commodi corrupti sunt beatae reprehenderit magnam deleniti, aut natus.</p>
+  <img src="/images/2022-04-adam-bike-glasses.jpeg" alt="Adam rides">
+  <h1>This is my Home Page</h1>
+
+  <Card>
+    <h2>This is my Card</h2>
+  </Card>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse similique illum! Sapiente cumque voluptates aliquid voluptatum aspernatur aperiam error harum commodi corrupti sunt beatae reprehenderit magnam deleniti, aut natus.</p>
+
+  <Markdown>
+    ## Write some markdown here
+    Something is a long paragraph here blah blah blah
+  </Markdown>
 </Base>
